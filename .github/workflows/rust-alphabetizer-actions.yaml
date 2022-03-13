@@ -30,7 +30,7 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository
         run: |
-          ls ${{ github.workspace }}
+          ls -a ${{ github.workspace }} && ls -a ${{ github.workspace }}/../
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Install Rust
         run: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y

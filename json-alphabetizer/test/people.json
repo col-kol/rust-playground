@@ -1,0 +1,30 @@
+{
+    "StevenSeagal": {
+        "marksmanship": "questionable",
+        "aikido": "legit",
+        "otherMartialArts": "no"
+    },
+    "JasonBourne": {
+        "real": "yes",
+        "movies": [
+            "Identity",
+            "Supremacy",
+            "Ultimatium", 
+            "Legacy"
+        ],
+        "profession": "SpecOps"
+    },
+    "LaraCroft": {
+        "pistols": 2,
+        "job": "Tomb Radier",
+        // duplicate
+        "pistols": 3,
+        "totalMovies": 3
+    },
+    "JanMichaelVincent": {
+        "profession": "action star",
+        "era": "1980s",
+        "cartoon": "yes"
+    }
+
+}
