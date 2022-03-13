@@ -33,6 +33,6 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Install Rust
-        run: yes | curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+        run: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
       - name: Cargo Build
         run: cd "${{ github.workspace }}/json-alphabetizer" && cargo build "./test/people.json"
