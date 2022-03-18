@@ -1,1 +1,1 @@
-# Fun with Rust
+# Fun with [Rust](https://www.rust-lang.org)
