@@ -26,13 +26,8 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
 
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-      - name: List files in the repository
-        run: |
-          ls -a ${{ github.workspace }} && ls -a ${{ github.workspace }}/../
-      - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Install Rust
         run: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+
       - name: Cargo Build
         run: cd "${{ github.workspace }}/json-alphabetizer" && cargo build
