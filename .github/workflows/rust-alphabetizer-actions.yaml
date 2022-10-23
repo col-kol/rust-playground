@@ -29,5 +29,9 @@ jobs:
       - name: Install Rust
         run: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
-      - name: Cargo Build
-        run: cd "${{ github.workspace }}/json-alphabetizer" && cargo build
+      - name: Scrape JSONs
+        run: cd "${{ github.workspace }}/json-alphabetizer/test" && ./scrape_jsons.sh
+    
+      - name: Cargo Run
+        run: cd "${{ github.workspace }}/json-alphabetizer" && cargo run ./test/people.json
+

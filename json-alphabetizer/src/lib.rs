@@ -8,7 +8,7 @@ pub fn run(filename: &str) -> Result<()> {
     let json_file = fs::read_to_string(filename)
         .expect("Something went wrong reading the file");
     
-    println!("json_file:\n{}", json_file);
+    // println!("json_file:\n{}", json_file);
     let json: Value = serde_json::from_str(&json_file)
         .expect("JSON is malformed");
     println!("Value:\n{}", json);

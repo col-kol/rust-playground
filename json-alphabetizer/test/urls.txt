@@ -1,0 +1,12 @@
+https://api.nobelprize.org/v1/prize.json
+https://data.nasa.gov/resource/y77d-th95.json
+https://www.reddit.com/r/linux.json
+https://www.reddit.com/r/gaming.json
+https://www.reddit.com/r/science.json
+
+
+
+
+
+
+
